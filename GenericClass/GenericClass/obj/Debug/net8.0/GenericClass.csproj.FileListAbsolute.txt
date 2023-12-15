@@ -1,0 +1,15 @@
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\bin\Debug\net8.0\GenericClass.exe
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\bin\Debug\net8.0\GenericClass.deps.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\bin\Debug\net8.0\GenericClass.runtimeconfig.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\bin\Debug\net8.0\GenericClass.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\bin\Debug\net8.0\GenericClass.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.AssemblyInfoInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.AssemblyInfo.cs
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.csproj.CoreCompileInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.sourcelink.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\refint\GenericClass.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\GenericClass.genruntimeconfig.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\GenericClass\GenericClass\obj\Debug\net8.0\ref\GenericClass.dll
