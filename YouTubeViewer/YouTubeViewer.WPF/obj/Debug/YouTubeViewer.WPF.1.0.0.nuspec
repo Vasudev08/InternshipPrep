@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>YouTubeViewer.WPF</id>
+    <version>1.0.0</version>
+    <authors>YouTubeViewer.WPF</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="7eb22502d5145771133f894927afc86534d81109" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\YouTubeViewer\YouTubeViewer.WPF\bin\Debug\net8.0-windows\YouTubeViewer.WPF.runtimeconfig.json" target="lib\net8.0-windows7.0\YouTubeViewer.WPF.runtimeconfig.json" />
+    <file src="D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\YouTubeViewer\YouTubeViewer.WPF\bin\Debug\net8.0-windows\YouTubeViewer.WPF.dll" target="lib\net8.0-windows7.0\YouTubeViewer.WPF.dll" />
+  </files>
+</package>

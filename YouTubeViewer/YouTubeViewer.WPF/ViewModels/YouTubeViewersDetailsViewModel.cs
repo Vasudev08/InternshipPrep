@@ -10,6 +10,6 @@ namespace YouTubeViewer.WPF.ViewModels
     {
        
 
-        public
+       
     }
 }

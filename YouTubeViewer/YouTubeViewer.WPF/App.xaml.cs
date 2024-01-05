@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
+using YouTubeViewer.WPF.ViewModels;
 
 namespace YouTubeViewer.WPF
 {
@@ -11,7 +12,10 @@ namespace YouTubeViewer.WPF
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            MainWindow = new MainWindow();
+            MainWindow = new MainWindow()
+            {
+                DataContext = new YouTubeViewersViewModel()
+            };
             MainWindow.Show();
             base.OnStartup(e);
         }

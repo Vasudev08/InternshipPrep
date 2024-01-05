@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "++HF7P/KuCt+SczSldg64swOb8vkeP9OJqEVnI+fBu0MoiA9nkx/knLe1t2a59R7m1mP/DIkuue7g/XgL4CN0A==",
+  "dgSpecHash": "URBvb6fYNhJPcZhGQBlqqxlXQRaMRNGCFg1Iv5WZL18m1aXKYWjt9l9JNRZocWZLCXbHu7gCY0vJqLRBcUPSDA==",
   "success": true,
   "projectFilePath": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\YouTubeViewer\\YouTubeViewer.WPF\\YouTubeViewer.WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vasu1\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

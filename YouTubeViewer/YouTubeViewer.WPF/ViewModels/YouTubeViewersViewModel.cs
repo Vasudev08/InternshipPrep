@@ -9,14 +9,17 @@ namespace YouTubeViewer.WPF.ViewModels
 {
     public class YouTubeViewersViewModel : ViewModelBase
     {
-        public YouTubeViewersDetailsViewModel YouTubeViewersListingViewModel { get; }
+        public YouTubeViewersListingViewModel YouTubeViewersListingViewModel { get; }
         public YouTubeViewersDetailsViewModel YouTubeViewersDetailsViewModel { get; }
+
         public ICommand AddYouTubeViewersCommand { get; }
 
         public YouTubeViewersViewModel() 
         { 
-            YouTubeViewersListingViewModel = new YouTubeViewersDetailsViewModel();
+            YouTubeViewersListingViewModel = new YouTubeViewersListingViewModel();
             YouTubeViewersDetailsViewModel = new YouTubeViewersDetailsViewModel();
         }
+
+       
     }
 }
