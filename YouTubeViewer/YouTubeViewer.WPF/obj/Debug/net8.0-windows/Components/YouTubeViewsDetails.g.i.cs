@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using DropdownMenuControl;
 using System;
 using System.Diagnostics;
 using System.Windows;
