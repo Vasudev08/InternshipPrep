@@ -40,6 +40,7 @@ namespace Calculator
     public partial class MainWindow : Window
     {
         double lastNumber, result;
+        SelectedOperator selectedOperator;
         public MainWindow()
         {
             InitializeComponent();
@@ -53,14 +54,48 @@ namespace Calculator
 
         private void EqualButton_Click(object sender, RoutedEventArgs e)
         {
+            double newNumber;
+            if (double.TryParse(resultLabel.Content.ToString(), out newNumber))
+            {
+                switch(selectedOperator)
+                {
+                    case SelectedOperator.Addition:
+                        result = SimpleMath.Add(lastNumber, newNumber);
+                        break;
+                    case SelectedOperator.Subtraction:
+                        result = SimpleMath.Subtraction(lastNumber, newNumber);
+                        break;
+                    case SelectedOperator.Multiplication:
+                        result = SimpleMath.Multiplication(lastNumber, newNumber);
+                        break;
+                    case SelectedOperator.Division:
+                        result = SimpleMath.Division(lastNumber, newNumber);
+                        break;
+
+
+                }
+
+                resultLabel.Content = result.ToString();
+            }
+
         }
 
+        // 50 + 5% (2.5) = 52.5
+        // 80 + 10% (8) = (88)
         private void PercentageButton_Click(object sender, RoutedEventArgs e)
         {
-            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            double tempNumber;
+            if (double.TryParse(resultLabel.Content.ToString(), out tempNumber))
             {
-                lastNumber = lastNumber / 100;
-                resultLabel.Content = lastNumber.ToString();
+                tempNumber = tempNumber / 100;
+                if (lastNumber != 0)
+                {
+                    tempNumber *= lastNumber;
+
+                }
+
+
+                resultLabel.Content = tempNumber.ToString();
             }
         }
 
@@ -77,6 +112,8 @@ namespace Calculator
         private void AcButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
+            result = 0;
+            lastNumber = 0;
         }
 
         //access modifier --> Private,  type --> void : not return any values, EventName(two argument or two values)
@@ -89,34 +126,34 @@ namespace Calculator
                 resultLabel.Content = "0";
             }
 
+            if (sender == multiplicationButton)
+            {
+                selectedOperator = SelectedOperator.Multiplication;
+            }
+            if (sender == divisionButton)
+            {
+                selectedOperator = SelectedOperator.Division;
+            }
+            if (sender == additionButton)
+            {
+                selectedOperator = SelectedOperator.Addition;
+            }
+            if (sender == subtractionButton)
+            {
+                selectedOperator = SelectedOperator.Subtraction;
+            }
+
 
         }
         
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
-
-            int selectedValue = 0;
-
-            if (sender == zeroButton)
-                selectedValue = 0;
-            if (sender == oneButton)
-                selectedValue = 1;
-            if (sender == twoButton)
-                selectedValue = 2;
-            if (sender == threeButton)
-                selectedValue = 3;
-            if (sender == fourButton)
-                selectedValue = 4;
-            if (sender == fiveButton)
-                selectedValue = 5;
-            if (sender == sixButton)
-                selectedValue = 6;
-            if (sender == sevenButton)
-                selectedValue = 7;
-            if (sender == eightButton)
-                selectedValue = 8;
-            if (sender == nineButton)
-                selectedValue = 9;
+            // Here, as we know that the sender object is a button we could
+            // use that fact to our advantage and receive the sender as a button
+            // recive its content as an int.
+            // int because our buttons are numbered between 1 to 9. and there's
+            // no decimal space
+            int selectedValue = int.Parse((sender as Button).Content.ToString());
             
 
             if (resultLabel.Content.ToString() == "0")
@@ -128,6 +165,57 @@ namespace Calculator
                 resultLabel.Content = $"{resultLabel.Content}{selectedValue}";
             }
 
+        }
+        // Custom Variable Type
+        public enum SelectedOperator
+        {
+            Addition,
+            Subtraction,
+            Multiplication,
+            Division
+
+        }
+
+        private void pointButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (resultLabel.Content.ToString().Contains("."))
+            {
+                // Do nothing
+            }
+            else
+            {
+                resultLabel.Content = $"{resultLabel.Content}.";
+            }
+
+        }
+
+        public class SimpleMath
+        {
+            public static double Add(double n1, double n2)
+            {
+                return n1 + n2;
+            }
+
+            public static double Subtraction(double n1, double n2)
+            {
+                return n1 - n2;
+            }
+
+            public static double Multiplication(double n1, double n2)
+            {
+                return n1 * n2;
+            }
+
+            public static double Division(double n1, double n2)
+            {
+                if(n2 == 0)
+                {
+                    MessageBox.Show("Division by 0 is not supported", "Wrong operation",MessageBoxButton.OK, MessageBoxImage.Error);
+                    return 0;
+                }
+
+                return n1 / n2;
+            }
         }
     }
 }
