@@ -1,0 +1,15 @@
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\bin\Debug\net8.0\CSharpPractice.exe
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\bin\Debug\net8.0\CSharpPractice.deps.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\bin\Debug\net8.0\CSharpPractice.runtimeconfig.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\bin\Debug\net8.0\CSharpPractice.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\bin\Debug\net8.0\CSharpPractice.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.AssemblyInfoInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.AssemblyInfo.cs
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.csproj.CoreCompileInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.sourcelink.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\refint\CSharpPractice.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\CSharpPractice.genruntimeconfig.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\CSharpPractice\CSharpPractice\obj\Debug\net8.0\ref\CSharpPractice.dll
