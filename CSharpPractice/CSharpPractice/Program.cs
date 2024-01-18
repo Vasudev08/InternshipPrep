@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System;
 using CSharpPractice.Classes;
+using CSharpPractice.Interfaces;
 
 namespace CSharpPractice
 
@@ -12,26 +13,35 @@ namespace CSharpPractice
         static void Main(string[] args)
         {
 
-            double[] numbers = [1, 2, 4, 42, 4256];
-            var result = SimpleMath.Add(numbers);
-            Console.WriteLine(result);
+            
 
 
             BankAccount bankAccount = new BankAccount(1000);//
             bankAccount.AddtoBalance(100);
-            Console.WriteLine(bankAccount.Balance);
+            SimpleMath simpleMath = new SimpleMath();
 
 
-            ChildBankAccount childBankAccount = new ChildBankAccount();
-            childBankAccount.AddtoBalance(10);
-            Console.WriteLine(childBankAccount.Balance);
+            Console.WriteLine(Infromation(bankAccount));
+
+
 
             Console.ReadLine();
             //bankAccount.AddtoBalance(numberTwo); // Bankaccount class isn't an static method so we have to declare or instnation it
+            // static methods don't need an class object to be.
+            // static methods are mostly used in main functions.
+
+
+            // interface impelement we don't have to worry about types
+        }
+
+        private static string Infromation(IInformation information)
+        {
+            return information.GetInformation();
+            
         }
     }
 
-    class SimpleMath
+    class SimpleMath : IInformation
     {
 
         // static methods are methods which can be used without instantiating a class
@@ -55,6 +65,11 @@ namespace CSharpPractice
 
             return result;
 
+        }
+
+        public string GetInformation()
+        {
+            return "Class that solves simple math.";
         }
     }
 

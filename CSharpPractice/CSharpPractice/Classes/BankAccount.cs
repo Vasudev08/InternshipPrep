@@ -4,10 +4,12 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CSharpPractice.Interfaces;
+
 
 namespace CSharpPractice.Classes
 {
-    public class BankAccount
+    public class BankAccount : IInformation
     {
 
         public BankAccount()
@@ -39,11 +41,20 @@ namespace CSharpPractice.Classes
         }
 
 
+        //C# use of virtual -> makes it type safe i.e. function overriding using virtual and override for function overriding
+        // function overloading -> difference parameters 
+        // fucntion override -> virutal and override keyword
 
-        public double AddtoBalance(double balanceToBeAdded)
+        // a class can only herit from one another class
+        public virtual double AddtoBalance(double balanceToBeAdded)
         {
             Balance += balanceToBeAdded;
             return Balance;
+        }
+
+        public string GetInformation()
+        {
+            return $"Your current balance is: {Balance:c}";
         }
     }
 
@@ -52,6 +63,15 @@ namespace CSharpPractice.Classes
         public ChildBankAccount()
         {
             Balance = 10;
+        }
+
+        public override double AddtoBalance(double balanceToBeAdded)
+        {
+            if (balanceToBeAdded > 1000)
+                balanceToBeAdded = 1000;
+            if (balanceToBeAdded < -1000)
+                balanceToBeAdded = -1000;
+            return base.AddtoBalance(balanceToBeAdded);
         }
     }
 }
