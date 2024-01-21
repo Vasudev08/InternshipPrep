@@ -41,3 +41,5 @@ D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsAp
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\obj\Debug\net8.0-windows\DesktopContactsApp.csproj.AssemblyReference.cache
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\obj\Debug\net8.0-windows\DesktopContactsApp.csproj.CopyComplete
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\obj\Debug\net8.0-windows\ContactDetailsWindow.g.cs
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\obj\Debug\net8.0-windows\ContactDetailsWindow.baml

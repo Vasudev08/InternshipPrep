@@ -17,9 +17,12 @@ namespace DesktopContactsApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Contact> contacts;
+
         public MainWindow()
         {
             InitializeComponent();
+            contacts = new List<Contact>();
             ReadDatabase();
         }
 
@@ -39,9 +42,48 @@ namespace DesktopContactsApp
             using(SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Contact>();
-                var contacts = conn.Table<Contact>().ToList();
+                contacts = (conn.Table<Contact>().ToList()).OrderBy(c => c.Name).ToList();
+
+
+              
+                                 
             }
 
+            if (contacts != null)
+            {
+// Binding to a Source
+// - Path
+// - Mode
+// -- OneWay
+// -- TwoWay
+// -- OneWayToSource
+                contactsListView.ItemsSource = contacts;
+            }
+
+        }
+
+        private void TextBlock_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            TextBox searchTextBox = sender as TextBox;
+
+            var filteredList = contacts.Where(c => c.Name.Contains(searchTextBox.Text)).ToList();
+
+            contactsListView.ItemsSource = filteredList;
+
+
+        }
+
+        private void contactsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Contact selectedContact = contactsListView.SelectedItem as Contact;
+
+            if (selectedContact != null)
+            {
+                ContactDetailsWindow contactDetailsWindow = new ContactDetailsWindow(selectedContact);
+                contactDetailsWindow.ShowDialog();
+
+                ReadDatabase();
+            }
         }
     }
 }
