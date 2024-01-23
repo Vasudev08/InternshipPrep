@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\DesktopContactsApp\DesktopContactsApp\App.xaml
-3-1961996713
+4-993155439
 
-91711388178
+10-1857296799
 2032057352568
-ContactDetailsWindow.xaml;MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;Controls\ContactControl.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
 True
 
