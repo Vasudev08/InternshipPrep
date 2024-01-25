@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kyPL03FTvXED1B9LUMEecVamzQ5vjQ4JDDhjw/NGlb7uxpbYt+bUKiKy40cplRc4yk7m4OfRoXrAz7QFMTjajA==",
+  "dgSpecHash": "B4czkM1MQZuHS6rYlg08xy38yam0O3DBHltdUZKMAdsDv40WInLmelL29dc3rC/VcDsiv0EdrxVm14De8Onslw==",
   "success": true,
   "projectFilePath": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\LandmarkAI\\LandmarkAI\\LandmarkAI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vasu1\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

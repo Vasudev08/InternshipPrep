@@ -19,3 +19,6 @@ D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\Landma
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\obj\Debug\net8.0-windows\LandmarkAI.pdb
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\obj\Debug\net8.0-windows\LandmarkAI.genruntimeconfig.cache
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\obj\Debug\net8.0-windows\ref\LandmarkAI.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\obj\Debug\net8.0-windows\LandmarkAI.csproj.AssemblyReference.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\LandmarkAI\LandmarkAI\obj\Debug\net8.0-windows\LandmarkAI.csproj.CopyComplete
