@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WeatherApp.Model;
+using WeatherApp.ViewModel.Commands;
+using WeatherApp.ViewModel.Helpers;
 
 namespace WeatherApp.ViewModel
 {
@@ -48,6 +50,41 @@ namespace WeatherApp.ViewModel
                 selectedCity = value;
                 OnPropertyChanged("SelectedCity");
             }
+        }
+        public SearchCommand SearchCommand { get; set; }
+        public WeatherVM()
+        {
+            if (DesignerProperties.GetIsInDesignMode(new System.Windows.DependencyObject()))
+            {
+
+                SelectedCity = new City
+                {
+                    LocalizedName = "New York"
+                };
+
+                CurrentCondition = new CurrentCondition
+                {
+                    WeatherText = "Partly Cloudy",
+                    Temperature = new Temperature
+                    {
+                        Metric = new Units
+                        {
+                            Value = 21
+                        }
+                    }
+
+
+                };
+            }
+
+            SearchCommand = new SearchCommand(this);
+            
+        }
+
+        public async void MakeQuery()
+        {
+            var cities = await AccWeatherHelper.GetCities(Query);
+
         }
 
 
