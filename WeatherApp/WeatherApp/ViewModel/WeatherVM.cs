@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,8 @@ namespace WeatherApp.ViewModel
             }
         }
 
+        public ObservableCollection<City> Cities { get; set; }
+
         private CurrentCondition currentCondition;
 
         public CurrentCondition CurrentCondition
@@ -49,6 +52,7 @@ namespace WeatherApp.ViewModel
             { 
                 selectedCity = value;
                 OnPropertyChanged("SelectedCity");
+                GetCurrentCondtions(GetCities());
             }
         }
         public SearchCommand SearchCommand { get; set; }
@@ -69,7 +73,7 @@ namespace WeatherApp.ViewModel
                     {
                         Metric = new Units
                         {
-                            Value = 21
+                            Value = "21"
                         }
                     }
 
@@ -78,12 +82,31 @@ namespace WeatherApp.ViewModel
             }
 
             SearchCommand = new SearchCommand(this);
+            Cities = new ObservableCollection<City>();
             
+        }
+
+        private ObservableCollection<City> GetCities()
+        {
+            return Cities;
+        }
+
+        private async Task GetCurrentCondtions(ObservableCollection<City> cities)
+        {
+            Query = string.Empty;
+            cities.Clear();
+            CurrentCondition = await AccWeatherHelper.GetCurrentConditions(SelectedCity.Key);
         }
 
         public async void MakeQuery()
         {
             var cities = await AccWeatherHelper.GetCities(Query);
+
+            Cities.Clear();
+            foreach(var city in cities)
+            {
+                Cities.Add(city);
+            }
 
         }
 

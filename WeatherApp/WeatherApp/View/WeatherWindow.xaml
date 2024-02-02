@@ -24,11 +24,12 @@
                     Command="{Binding SearchCommand}"
                     CommandParameter="{Binding Query}"
                     Content="Search"/>
-            <ListView>
+            <ListView ItemsSource="{Binding Cities}"
+                      SelectedValue="{Binding SelectedCity}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <TextBlock/>
+                            <TextBlock  Text="{Binding LocalizedName}"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -54,6 +55,11 @@
                            Foreground="#f4f4f4"
                            FontSize="18"
                            Margin="20, 0"/>
+                <TextBlock Text="{Binding HasPrecipitation}"
+                           Foreground="#f4f4f4"
+                           FontSize="18"
+                           Margin="20, 0"/>
+                
             </StackPanel>
             <TextBlock Grid.Column="1"
                        VerticalAlignment="Center"
