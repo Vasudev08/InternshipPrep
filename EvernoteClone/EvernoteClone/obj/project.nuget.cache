@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "3kt5NpuJHAU5aj+YMtEqA7QMRdYrfWEFdESFK6YkoRw69KnvvGUGxlf8HYDgjFK6Ivn5q92uOHU4Us4vNJP08Q==",
+  "success": true,
+  "projectFilePath": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\EvernoteClone\\EvernoteClone\\EvernoteClone.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vasu1\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\vasu1\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\vasu1\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\vasu1\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\vasu1\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\vasu1\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
