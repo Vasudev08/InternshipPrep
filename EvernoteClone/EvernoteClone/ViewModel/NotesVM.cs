@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EvernoteClone.Model;
 using EvernoteClone.ViewModel.Commands;
+using EvernoteClone.ViewModel.Helpers;
 
 namespace EvernoteClone.ViewModel
 {
@@ -34,6 +35,30 @@ namespace EvernoteClone.ViewModel
         {
             NewNotebookCommand = new NewNotebookCommand(this);
             NewNoteCommand = new NewNoteCommand(this);
+        }
+
+        public void CreateNotebook()
+        {
+            Notebook newNotebook = new Notebook()
+            {
+                Name = "New notebook",
+
+            };
+
+            DatabaseHelper.Insert(newNotebook);
+        }
+
+        public void CreateNote(int notebookId)
+        {
+            Note newNote = new Note()
+            {
+                NotebookId = notebookId,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                Title = "New note"
+            };
+
+            DatabaseHelper.Insert(newNote);
         }
 
     }

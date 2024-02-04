@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EvernoteClone.View"
         mc:Ignorable="d"
+        xmlns:vm="clr-namespace:EvernoteClone.ViewModel"
         Title="NotesWindow" Height="450" Width="800">
-    <Grid>
+
+    <Window.Resources>
+        <vm:NotesVM x:Key="vm"/>
+    </Window.Resources>
+    <DockPanel DataContext="{StaticResource vm}">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New notebook"
+                          Command="{Binding NewNotebookCommand}"/>
+                <MenuItem Header="New note" 
+                          Command="{Binding NewNoteCommand}"
+                          CommandParameter="{Binding SelectedNotebook}"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
+
+
+            </MenuItem>
+            
+        </Menu>
+        <ListView DockPanel.Dock="Left"
+                  Width="140"
+                  ItemsSource="{Binding Notebooks}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+            
+        </ListView>
+        <ListView DockPanel.Dock="Left"
+                  Width="140"
+                  ItemsSource="{Binding Notes}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <Grid>
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button Content="Speech"
+                            Click="SpeechButton_Click"/>
+                </ToolBar>
+            </ToolBarTray>
+        </Grid>
         
-    </Grid>
+    </DockPanel>
 </Window>

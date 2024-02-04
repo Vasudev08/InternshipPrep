@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using EvernoteClone.Model;
 
 namespace EvernoteClone.ViewModel.Commands
 {
@@ -16,14 +17,21 @@ namespace EvernoteClone.ViewModel.Commands
         }
         public event EventHandler? CanExecuteChanged;
 
-        public bool CanExecute(object? parameter)
+        public bool CanExecute(object parameter)
         {
-            return true;
+            Notebook selectedNotebook = parameter as Notebook;
+            if (selectedNotebook != null)
+            {
+                return true;
+            }
+            
+            return false;
         }
 
-        public void Execute(object? parameter)
+        public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            Notebook selectedNotebook = parameter as Notebook;
+            VM.CreateNote(selectedNotebook.Id);
         }
     }
 }
