@@ -14,6 +14,7 @@
     <DockPanel DataContext="{StaticResource vm}">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
+                
                 <MenuItem Header="New notebook"
                           Command="{Binding NewNotebookCommand}"/>
                 <MenuItem Header="New note" 
@@ -26,8 +27,16 @@
             </MenuItem>
             
         </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="statusTextBlock"/>
+            </StatusBarItem>
+
+        </StatusBar>
         <ListView DockPanel.Dock="Left"
+                  SelectedItem="{Binding SelectedNotebook, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                   Width="140"
+                  SelectedValue="{Binding SelectedNotebook, Mode=TwoWay}"
                   ItemsSource="{Binding Notebooks}">
 
             <ListView.ItemTemplate>
@@ -47,14 +56,21 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
 
-        </ListView>
+        </ListView>        
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="Speech"
+                        Click="SpeechButton_Click"/>
+                <Button x:Name="boldButton"
+                        Click="boldButton_Click">
+                    <TextBlock Text="B"
+                               FontWeight="Bold"/>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>        
         <Grid>
-            <ToolBarTray DockPanel.Dock="Top">
-                <ToolBar>
-                    <Button Content="Speech"
-                            Click="SpeechButton_Click"/>
-                </ToolBar>
-            </ToolBarTray>
+            <RichTextBox x:Name="contentRichTextBox"
+                         TextChanged="contentRichTextBox_TextChanged"/>
         </Grid>
         
     </DockPanel>

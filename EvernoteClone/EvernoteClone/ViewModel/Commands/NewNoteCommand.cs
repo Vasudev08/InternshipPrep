@@ -10,12 +10,16 @@ namespace EvernoteClone.ViewModel.Commands
 {
     public class NewNoteCommand : ICommand
     {
-        public NotesVM VM { get; set; }
+        public NotesVM ViewModel { get; set; }
 
         public NewNoteCommand(NotesVM vm) {
-            VM = vm;
+            ViewModel = vm;
         }
-        public event EventHandler? CanExecuteChanged;
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
 
         public bool CanExecute(object parameter)
         {
@@ -31,7 +35,7 @@ namespace EvernoteClone.ViewModel.Commands
         public void Execute(object parameter)
         {
             Notebook selectedNotebook = parameter as Notebook;
-            VM.CreateNote(selectedNotebook.Id);
+            ViewModel.CreateNote(selectedNotebook.Id);
         }
     }
 }
