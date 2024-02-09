@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\PersonalWebsiteTryOne\\PersonalWebsiteTryOne\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PersonalWebsiteTryOne.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PersonalWebsiteTryOne.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\PersonalWebsiteTryOne\\PersonalWebsiteTryOne\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\PersonalWebsiteTryOne\\PersonalWebsiteTryOne\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\PersonalWebsiteTryOne\\PersonalWebsiteTryOne\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Vasudev_Agarwal\\Work_Fun\\1_Texas_AM\\1_Intership_Preparation\\PersonalWebsiteTryOne\\PersonalWebsiteTryOne\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PersonalWebsiteTryOne.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PersonalWebsiteTryOne.props",
+      "PackagePath": "build\\PersonalWebsiteTryOne.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PersonalWebsiteTryOne.props",
+      "PackagePath": "buildMultiTargeting\\PersonalWebsiteTryOne.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PersonalWebsiteTryOne.props",
+      "PackagePath": "buildTransitive\\PersonalWebsiteTryOne.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
