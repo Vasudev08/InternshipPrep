@@ -1,0 +1,12 @@
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\bin\Debug\net8.0\Engine.deps.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\bin\Debug\net8.0\Engine.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\bin\Debug\net8.0\Engine.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.AssemblyInfoInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.AssemblyInfo.cs
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.csproj.CoreCompileInputs.cache
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.sourcelink.json
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\refint\Engine.dll
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\Engine.pdb
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\Engine\obj\Debug\net8.0\ref\Engine.dll

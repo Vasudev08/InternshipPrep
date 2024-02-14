@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "RPGGameUI/1.0.0": {
+        "dependencies": {
+          "Engine": "1.0.0"
+        },
         "runtime": {
           "RPGGameUI.dll": {}
+        }
+      },
+      "Engine/1.0.0": {
+        "runtime": {
+          "Engine.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RPGGameUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Engine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
