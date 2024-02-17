@@ -79,11 +79,14 @@ namespace Engine.ViewModels
 
             CurrentLocation = CurrentWorld.LocationAt(0, -1);
 
+            
+
+
 
         }
 
-        
-        
+
+
         public void MoveNorth() 
         {
             if (HasLocationToNorth)
