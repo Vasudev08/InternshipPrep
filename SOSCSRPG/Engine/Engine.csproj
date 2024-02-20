@@ -28,6 +28,9 @@
     <None Remove="Images\Locations\TownGate.png" />
     <None Remove="Images\Locations\TownSquare.png" />
     <None Remove="Images\Locations\Trader.png" />
+    <None Remove="Images\Monster\GiantSpider.png" />
+    <None Remove="Images\Monster\Rat.png" />
+    <None Remove="Images\Monster\Snake.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +43,9 @@
     <Resource Include="Images\Locations\TownGate.png" />
     <Resource Include="Images\Locations\TownSquare.png" />
     <Resource Include="Images\Locations\Trader.png" />
+    <Resource Include="Images\Monster\GiantSpider.png" />
+    <Resource Include="Images\Monster\Rat.png" />
+    <Resource Include="Images\Monster\Snake.png" />
   </ItemGroup>
 
 </Project>

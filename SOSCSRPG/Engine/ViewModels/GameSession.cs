@@ -8,14 +8,35 @@ using Engine.Factories;
 using static System.Net.Mime.MediaTypeNames;
 using System.Security;
 using System.ComponentModel;
+using Engine.EventArgs;
 
 namespace Engine.ViewModels
 {
     public class GameSession : BaseNotificationClass
     {
+        public event EventHandler<GameMessageEventArgs> OnMessageRaised;
+
         // Creating an CurrentPlayer Property which allows us to access Player class members/properties and methods/functions
 
         private Location _currentLocation;
+        private Monster _currentMonster;
+
+        public Monster CurrentMonster
+        {
+            get { return _currentMonster;}
+            set
+            {
+                _currentMonster = value;
+                OnPropertyChanged(nameof(CurrentMonster));
+                OnPropertyChanged(nameof(HasMonster));
+
+                if (CurrentMonster != null)
+                {
+                    RaiseMessage("");
+                    RaiseMessage($"You see a {CurrentMonster.Name} here!");
+                }
+            }
+        }
         public Location CurrentLocation {
             get { return _currentLocation; }
             set 
@@ -26,6 +47,9 @@ namespace Engine.ViewModels
                 OnPropertyChanged(nameof(HasLocationToSouth));
                 OnPropertyChanged(nameof(HasLocationToEast));
                 OnPropertyChanged(nameof(HasLocationToWest));
+
+                GivePlayerQuestsAtLocation();
+                GetMonsterAtLocation();
 
             }
         }
@@ -52,6 +76,9 @@ namespace Engine.ViewModels
 
         public bool HasLocationToEast
         { get { return CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate) != null; } }
+
+        public bool HasMonster => CurrentMonster != null;
+
         public GameSession()
         {
             CurrentPlayer = new Player 
@@ -122,6 +149,27 @@ namespace Engine.ViewModels
 
             }
 
+        }
+
+        private void GivePlayerQuestsAtLocation()
+        {
+            foreach(Quest quest in CurrentLocation.QuestsAvaiableHere)
+            {
+                if (!CurrentPlayer.Quests.Any(q => q.PlayerQuest.ID == quest.ID))
+                {
+                    CurrentPlayer.Quests.Add(new QuestStatus(quest));
+                }
+            }
+        }
+
+        private void GetMonsterAtLocation()
+        {
+            CurrentMonster = CurrentLocation.GetMonster();
+        }
+
+        private void RaiseMessage(string message)
+        {
+            OnMessageRaised?.Invoke(this, new GameMessageEventArgs(message));   
         }
 
     }
