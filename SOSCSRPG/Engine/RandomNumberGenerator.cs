@@ -11,7 +11,7 @@ namespace Engine
     {
         private static readonly RNGCryptoServiceProvider _generator = new RNGCryptoServiceProvider();
 
-        public static int NumberBetween(int minimumValue, int maximumValue)
+        internal static int NumberBetween(int minimumValue, int maximumValue)
         {
             byte[] randomNumber = new byte[1];
 
@@ -29,5 +29,7 @@ namespace Engine
 
             return (int)(minimumValue + randomValueInRange);
         }
+
+        
     }
 }

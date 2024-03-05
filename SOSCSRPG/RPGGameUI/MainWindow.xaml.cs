@@ -18,13 +18,12 @@ namespace RPGGameUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GameSession _gameSession;
+        private readonly GameSession _gameSession = new GameSession();
         //Declare as private variable cuz we aren't using the above variable anywhere else
         public MainWindow()
         {
             InitializeComponent();
 
-            _gameSession = new GameSession();
             _gameSession.OnMessageRaised += OnGameMessageRaised;
 
             DataContext = _gameSession;
@@ -60,6 +59,14 @@ namespace RPGGameUI
         private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
         {
             _gameSession.AttackCurrentMonster();
+        }
+
+        private void OnClick_DisplayTradeScreen(object sender, RoutedEventArgs e)
+        {
+            TradeScreen tradeScreen = new TradeScreen();
+            tradeScreen.Owner = this;
+            tradeScreen.DataContext = _gameSession;
+            tradeScreen.ShowDialog();
         }
     }
 

@@ -23,3 +23,5 @@ D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameU
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameUI\bin\Debug\net8.0-windows\Engine.pdb
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameUI\obj\Debug\net8.0-windows\RPGGameUI.csproj.AssemblyReference.cache
 D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameUI\obj\Debug\net8.0-windows\RPGGameUI.csproj.CopyComplete
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameUI\obj\Debug\net8.0-windows\TradeScreen.g.cs
+D:\Vasudev_Agarwal\Work_Fun\1_Texas_AM\1_Intership_Preparation\SOSCSRPG\RPGGameUI\obj\Debug\net8.0-windows\TradeScreen.baml

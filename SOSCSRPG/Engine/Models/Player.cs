@@ -8,24 +8,14 @@ using System.Threading.Tasks;
 
 namespace Engine.Models
 {
-    public class Player : BaseNotificationClass
+    public class Player : LivingEntity
     {
-        private string _name;
         private string _characterClass;
         private int _experiencePoints;
-        private int _hitPoints;
         private int _level;
-        private int _gold;
 
        
-        public String Name {
-            get { return _name; } 
-            set 
-            {  
-                _name = value;
-                OnPropertyChanged(nameof(Name));
-            }
-        }
+        
         public String CharacterClass {
             get
             {
@@ -38,17 +28,7 @@ namespace Engine.Models
             }
         }
 
-        public int HitPoints { 
-            get
-            {
-                return _hitPoints;
-            } 
-            set
-            {
-                _hitPoints = value;
-                OnPropertyChanged(nameof(HitPoints));
-            } 
-        }
+        
         public int ExperiencePoints 
         { get { return _experiencePoints; }
             set 
@@ -65,20 +45,7 @@ namespace Engine.Models
                 OnPropertyChanged(nameof(Level));
             } 
         }
-        public int Gold {
-            get { return _gold; }
-            set 
-            {
-                _gold = value;
-                OnPropertyChanged(nameof(Gold));
-            } 
-        }
-
-        public ObservableCollection<GameItem> Inventory { get; set; }
-
-        public List<GameItem> Weapons =>
-            Inventory.Where(i => i is Weapon).ToList();
-
+       
         public ObservableCollection<QuestStatus> Quests { get; set; }
 
         public Player()
@@ -87,10 +54,18 @@ namespace Engine.Models
             Quests = new ObservableCollection<QuestStatus> { };
         }
 
-        public void AddItemToInventory(GameItem item)
+      
+        public bool HasAllTheseItems(List<ItemQuantity> items)
         {
-            Inventory.Add(item);
-            OnPropertyChanged(nameof(Weapons));
+            foreach (ItemQuantity item in items)
+            {
+                if (Inventory.Count(i => i.ItemTypeID == item.ItemID) < item.Quantity)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         
