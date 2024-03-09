@@ -4,9 +4,8 @@
     {
      
 
-        public Trader(String name) 
+        public Trader(String name) : base(name, 9999, 9999, 9999)
         {
-            Name = name;
         
         }
     

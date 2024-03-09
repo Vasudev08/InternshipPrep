@@ -45,9 +45,12 @@ namespace Engine.Models
        
         public ObservableCollection<QuestStatus> Quests { get; set; }
 
-        public Player()
+        public Player(string name, string characterClass, int experiencePonits, int maximumHitPoints, int currentHitPoints, int gold) : base(name, maximumHitPoints, currentHitPoints, gold)
         {
-            Quests = new ObservableCollection<QuestStatus> { };
+            CharacterClass = characterClass;
+            ExperiencePoints = experiencePonits;
+
+            Quests = new ObservableCollection<QuestStatus>();
         }
 
       
@@ -64,6 +67,9 @@ namespace Engine.Models
             return true;
         }
 
-        
+        internal void AddItemToInventory(GameItem gameItem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
